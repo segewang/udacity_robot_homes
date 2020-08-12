@@ -123,6 +123,10 @@ add_executable(add_markers src/add_markers.cpp)
 target_link_libraries(add_markers ${catkin_LIBRARIES})
 add_dependencies(add_markers add_markers_generate_messages_cpp)
 
+add_executable(use_add_markers src/use_add_markers.cpp)
+target_link_libraries(use_add_markers ${catkin_LIBRARIES})
+add_dependencies(use_add_markers add_markers)
+
 
 ## Declare a C++ library
 # add_library(${PROJECT_NAME}
